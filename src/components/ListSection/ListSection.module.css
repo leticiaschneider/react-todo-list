@@ -1,0 +1,39 @@
+.todoContainer {
+    flex: 1;
+    background: #f5f7fb;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todoContainer h2 {
+    margin: 10px 7px 14px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+
+.todoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todoList li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.todoList li:last-child {
+    margin-bottom: 0px;
+}
+
+.todoCheckbox {
+    margin-right: 10px;
+}
