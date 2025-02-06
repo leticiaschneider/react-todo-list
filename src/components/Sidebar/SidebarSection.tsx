@@ -3,10 +3,10 @@ import SidebarItem from "./SidebarItem";
 interface SidebarSectionProps {
     title: string;
     items: { icon: string; label: string }[];
-    updateTitle: (newTitle: string) => void;
+    onUpdateTitle: (newTitle: string) => void;
 }
 
-function SidebarSection({ title, items, updateTitle }: SidebarSectionProps) {
+function SidebarSection({ title, items, onUpdateTitle }: SidebarSectionProps) {
     return (
         <div>
             <h2>{title}</h2>
@@ -16,7 +16,7 @@ function SidebarSection({ title, items, updateTitle }: SidebarSectionProps) {
                         key={index}
                         icon={item.icon}
                         label={item.label}
-                        updateTitle={updateTitle}
+                        onUpdateTitle={onUpdateTitle}
                     />
                 ))}
             </ul>

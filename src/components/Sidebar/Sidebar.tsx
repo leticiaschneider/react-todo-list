@@ -2,10 +2,10 @@ import SidebarSection from './SidebarSection'
 import classses from './Sidebar.module.css'
 
 interface SidebarProps {
-    updateTitle: (newTitle: string) => void;
+    onUpdateTitle: (newTitle: string) => void;
 }
 
-function Sidebar({ updateTitle }: SidebarProps) {
+function Sidebar({ onUpdateTitle }: SidebarProps) {
     const navigationItems = [
         { icon: "fa-calendar-day", label: "Today" },
         { icon: "fa-calendar-week", label: "Scheduled" },
@@ -22,8 +22,8 @@ function Sidebar({ updateTitle }: SidebarProps) {
 
     return (
         <div className={classses.sidebar}>
-            <SidebarSection title="Listly" items={navigationItems} updateTitle={updateTitle} />
-            <SidebarSection title="My Lists" items={listItems} updateTitle={updateTitle} />
+            <SidebarSection title="Listly" items={navigationItems} onUpdateTitle={onUpdateTitle} />
+            <SidebarSection title="My Lists" items={listItems} onUpdateTitle={onUpdateTitle} />
         </div>
     );
 }

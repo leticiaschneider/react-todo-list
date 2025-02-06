@@ -1,12 +1,12 @@
 interface SidebarItemProps {
     icon: string;
     label: string;
-    updateTitle: (newTitle: string) => void;
+    onUpdateTitle: (newTitle: string) => void;
 }
 
-function SidebarItem({ icon, label, updateTitle }: SidebarItemProps) {
+function SidebarItem({ icon, label, onUpdateTitle }: SidebarItemProps) {
     const handleClick = () => {
-        updateTitle(label);
+        onUpdateTitle(label);
     };
 
     return (

@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="container">
-      <Sidebar updateTitle={updateTitle} />
+      <Sidebar onUpdateTitle={updateTitle} />
       <ListSection title={title} tasks={tasks} />
     </div>
   );
