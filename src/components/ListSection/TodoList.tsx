@@ -1,7 +1,7 @@
 import TodoItem from "./TodoItem";
 import classes from './ListSection.module.css'
 
-function TodoList({ tasks }: { tasks: string[] }) {
+function TodoList({ tasks }: { tasks: { text: string; checked: boolean }[] }) {
     return (
         <ul className={classes.todoList}>
             {tasks.map((task, index) => (

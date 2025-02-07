@@ -3,7 +3,7 @@ import classes from "./ListSection.module.css";
 
 interface ListSectionProps {
   title: string;
-  tasks: string[];
+  tasks: { text: string; checked: boolean }[];
 }
 
 function ListSection({ title, tasks }: ListSectionProps) {

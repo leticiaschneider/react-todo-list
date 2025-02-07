@@ -1,9 +1,9 @@
 import classes from './ListSection.module.css'
 
-function TodoItem({ task }: { task: string }) {
+function TodoItem({ task }: { task: { text: string; checked: boolean } }) {
     return (
         <li>
-            <input type="checkbox" className={classes.todoCheckbox} /> {task}
+            <input type="checkbox" className={classes.todoCheckbox} /> {task.text}
         </li>
     );
 }
