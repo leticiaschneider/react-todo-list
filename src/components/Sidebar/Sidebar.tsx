@@ -1,5 +1,5 @@
-import SidebarSection from './SidebarSection'
-import classses from './Sidebar.module.css'
+import SidebarSection from "./SidebarSection";
+import classes from "./Sidebar.module.css";
 
 interface SidebarProps {
     onUpdateTitle: (newTitle: string) => void;
@@ -17,15 +17,22 @@ function Sidebar({ onUpdateTitle }: SidebarProps) {
         { icon: "fa-list", label: "Personal" },
         { icon: "fa-briefcase", label: "Work" },
         { icon: "fa-shopping-cart", label: "Shopping" },
-        { icon: "fa-plus-circle", label: "New List" },
     ];
 
+    function handleNewList() {
+        console.log("New list button clicked!");
+    }
+
     return (
-        <div className={classses.sidebar}>
+        <div className={classes.sidebar}>
             <SidebarSection title="Listly" items={navigationItems} onUpdateTitle={onUpdateTitle} />
             <SidebarSection title="My Lists" items={listItems} onUpdateTitle={onUpdateTitle} />
+            <hr />
+            <button className={classes.newListButton} onClick={handleNewList}>
+                <i className="fas fa-plus-circle"></i> New List
+            </button>
         </div>
     );
 }
 
-export default Sidebar
+export default Sidebar;

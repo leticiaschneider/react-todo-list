@@ -5,6 +5,10 @@
     width: 250px;
 }
 
+.sidebar hr {
+    margin-top: 10px;
+}
+
 .sidebar h2 {
     font-size: 16px;
     font-weight: 600;
@@ -33,7 +37,23 @@
     background: #f5f7fbbd;
 }
 
-.sidebar li i {
+.sidebar li i, .newListButton i {
     margin-right: 10px;
     color: #5429d1;
+}
+
+.newListButton {
+    outline: none;
+    border: none;
+    background: none;
+    text-align: left;
+    padding-left: 12px;
+    margin-top: 10px;
+    padding: 13px 14px;
+    cursor: pointer;
+}
+
+.newListButton:hover {
+    background: #f5f7fbbd;
+    border-radius: 15px;
 }
