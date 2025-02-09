@@ -10,7 +10,9 @@ function ListSection({ title, tasks }: ListSectionProps) {
   return (
     <div className={classes.todoContainer}>
       <h2>{title}</h2>
-      <TodoList tasks={tasks} />
+      {
+        tasks?.length > 0 ? <TodoList tasks={tasks} /> : "No tasks for now"
+      }
     </div>
   );
 }
