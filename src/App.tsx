@@ -17,7 +17,7 @@ function App() {
     { category: "Index", text: "Workout", checked: false },
     { category: "Personal", text: "Read a book", checked: false },
   ]);
-  
+
   const [tasks, setTasks] = useState<Task[]>(allTasks.filter(task => task.category === title));
 
   const updateTitle = (newTitle: string) => {
@@ -25,13 +25,14 @@ function App() {
     setTasks(allTasks.filter(task => task.category === newTitle));
   };
 
-  const addTask = (taskText: string) => {
-    const newTask: Task = { category: title, text: taskText, checked: false };
+  const addTask = (taskText: string, checked: boolean) => {
+    const newTask: Task = { category: title, text: taskText, checked };
     const updatedTasks = [...allTasks, newTask];
 
     setAllTasks(updatedTasks);
     setTasks(updatedTasks.filter(task => task.category === title));
   };
+
 
   return (
     <div className="container">
