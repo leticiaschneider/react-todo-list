@@ -24,8 +24,8 @@ function AddTask({ onAdd }: AddTaskProps) {
 
   return (
     <div className={classes.addTaskContainer}>
-      <div 
-        className={`${classes.checkCircle} ${checked ? classes.checked : ""}`} 
+      <div
+        className={`${classes.checkCircle} ${checked ? classes.checked : ""}`}
         onClick={() => setChecked(!checked)}
       />
       <input
