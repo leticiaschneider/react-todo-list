@@ -1,0 +1,57 @@
+.newListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.newListButton {
+    background: none;
+    border: none;
+    color: #5429d1;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.newListButton i {
+    font-size: 18px;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.newListInput {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.confirmButton,
+.cancelButton {
+    border-radius: 6px;
+    color: white;
+    padding: 0px;
+    font-size: 2px;
+    outline: none;
+    padding: 1px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.confirmButton {
+    background-color: #5429d1;
+}
+
+.cancelButton {
+    background-color: #8166d1;
+}
