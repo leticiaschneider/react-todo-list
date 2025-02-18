@@ -10,7 +10,7 @@ interface Task {
 }
 
 function App() {
-  const [title, setTitle] = useState<string>("Index");
+  const [title, setTitle] = useState<string>("Today");
   const [allTasks, setAllTasks] = useState<Task[]>([
     { category: "Personal", text: "Buy groceries", checked: false },
     { category: "Work", text: "Complete project", checked: true },
